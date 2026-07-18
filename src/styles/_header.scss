@@ -29,16 +29,16 @@
         }
     }
 
-    &__logo {
-        max-width: 80px;
-        width: 100%;
-        margin: 5px;
-        transition: opacity .5s ease;
+  &__logo {
+  width: 80px;
+  height: auto;
+  margin: 5px;
+  transition: opacity .5s ease;
 
-        @media (max-width: 768px) {
-            max-width: 64px;
-        }
-    }
+  @media (max-width: 768px) {
+    width: 64px;
+  }
+}
 
     &__links {
         display: flex;
