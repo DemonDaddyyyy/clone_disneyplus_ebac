@@ -27,6 +27,7 @@ function images() {
 function watchFiles() {
   gulp.watch('./src/styles/*.scss', styles);
   gulp.watch('./src/scripts/*.js', scripts);
+  gulp.watch('./src/images/**/*', images);   // ← nova linha
 }
 
 const build = gulp.parallel(styles, images, scripts); // SEM watch — termina normalmente

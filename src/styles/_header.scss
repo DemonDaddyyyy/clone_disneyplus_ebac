@@ -1,62 +1,65 @@
 @use 'variaveis';
 
 .header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: variaveis.$corDeFundo;
-    transition: background-color .5s ease;
-    z-index: 1;
+position: sticky;
+top: 0;
+left: 0;
+background-color: variaveis.$corDeFundo;
+transition: background-color .5s ease;
+z-index: 1;
 
-    &--is-hidden {
-        background-color: transparent;
 
-        .header {
-            &__logo, &__links__item:first-child {
-                opacity: 0;
-                visibility: hidden;
-            }
+&__container {
+padding: 8px 36px;
+display: flex;
+justify-content: space-between;
+
+@media (max-width: 768px) {
+padding: 0 12px 0 20px;
+flex-wrap: wrap;
+align-items: center;
         }
-    }
 
-    &__container {
-        padding: 8px 36px;
-        display: flex;
-        justify-content: space-between;
+h1{
+color: variaveis.$corTextoPrincipal;
+font-size: 50px;
+font-weight: 900;
+letter-spacing: 0em;
+margin-top: 3px;
 
-        @media (max-width: 768px) {
-            padding: 0 12px 0 20px;
-        }
-    }
-
-  &__logo {
-  width: 80px;
-  height: auto;
-  margin: 5px;
-  transition: opacity .5s ease;
-
-  @media (max-width: 768px) {
-    width: 64px;
+@media (max-width: 768px) {
+font-size: 24px;
+margin-top: 0;
   }
-}
+  }
 
-    &__links {
-        display: flex;
+    }
 
-        &__item {
-            margin: 5px;
-            transition: opacity .5s ease;
+
+&__links {
+display: flex;
+
+@media (max-width: 768px) {
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+padding-bottom: 8px;
+    }
+
+&__item {
+margin: 5px;
+transition: opacity .5s ease;
         }
     }
 
-    .button {
-        height: 50px;
+.button {
+height: 50px;
 
-        @media (max-width: 768px) {
-            font-size: 13px;
-            padding: 8px 11px;
-            height: 40px;
-            letter-spacing: 0;
+@media (max-width: 768px) {
+font-size: 13px;
+padding: 8px 11px;
+height: 40px;
+letter-spacing: 0;
         }
     }
 }

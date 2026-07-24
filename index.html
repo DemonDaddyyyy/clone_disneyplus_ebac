@@ -4,304 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Disney+</title>
+    <title>But I'm a Cheerleader</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <h1>
-                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <h1 class="header__container__name">
+                BUT I'M A CHEERLEADER
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Assine agora</a>
+                    <a href="#" class="button button--secondary">Sinópse</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button button--dark">Entrar</a>
+                    <a href="#" class="button button--dark">Elenco</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">FAQ</a>
                 </li>
             </ul>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero__content">
-            <div class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </div>
-            <h3 class="title--small">
-                As melhores histórias em um só lugar.
-            </h3>
-            <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
-                <br>
-                <span class="text">
-                    R$ 27,90/mês o R$ 279,90/ano à vista*
-                </span>
-            </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
+                    <a href="https://www.imdb.com/title/tt0179116/" target="_blank" rel="noopener noreferrer">
+                        <img src="./dist/images/logos/IMDb2.png" alt="IMDb">
+                    </a>
+                    <span class="text">6,9 de 10</span>
                 </li>
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
+                    <a href="https://letterboxd.com/film/but-im-a-cheerleader/" target="_blank" rel="noopener noreferrer">
+                        <img src="./dist/images/logos/letterboxd2.png" alt="Letterboxd">
+                    </a>
+                    <span class="text">4,0 de 5</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <a href="https://www.rottentomatoes.com/m/but_im_a_cheerleader" target="_blank" rel="noopener noreferrer">
+                        <img src="./dist/images/logos/rottentomatos2.jpg" alt="Rotten Tomatoes">
+                    </a>
+                    <span class="text">75%</span>
                 </li>
             </ul>
-            <p class="text--small">
-                *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-            </p>
         </div>
     </section>
-    <section class="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Em breve
-            </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
-                Mais populares
-            </button>
-            <button data-tab-button="star_plus" class="shows__tabs__button">
-                Mais no Star+
-            </button>
-        </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/em_breve/desencantada.jpg" alt="Desencantada">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/em_breve/lobisomem.jpg" alt="Lobisomem">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/em_breve/sem_limites.jpg" alt="Sem Limites">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/em_breve/willow.jpg" alt="Willow">
-            </li>
-        </ul>
-        <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./src/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_populares/bluey.jpg" alt="Bluey">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleiro da lua">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O incrivel Dr Pol">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_populares/red.jpg" alt="Red">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo igual SQN">
-            </li>
-        </ul>
-        <ul data-tab-id="star_plus" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/belair.jpg" alt="Belair">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/nba.jpg" alt="NBA">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpson">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
-            </li>
-            <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
-            </li>
-        </ul>
-    </section>
-    <section class="plans">
-        <h2 class="title--big">Escolha seu plano</h2>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 27,90/mês*</strong>
-                <p class="text--big">
-                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
-                </p>
-                <button class="button">Assine agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
-                <strong class="title--small">R$ 45,90/mês*</strong>
-                <p class="text--big">
-                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
-                </p>
-                <button class="button">Assine agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 55,90/mês*</strong>
-                <p class="text--big">
-                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
-                </p>
-                <button class="button">Assine agora</button>
-            </li>
-        </ul>
-        <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-        </p>
-    </section>
-    <section class="image-text-section">
-        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV, Computador, tablet e celular">
-        <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
+
+    <section class="trailer-section">
+        <div class="trailer-player">
+            <div class="trailer-player__window">
+                <div class="trailer-player__titlebar">
+                    <span class="trailer-player__titlebar__icon">▶</span>
+                    <span class="trailer-player__titlebar__title">Media Player</span>
+                    <div class="trailer-player__titlebar__buttons">
+                        <span>_</span>
+                        <span>▢</span>
+                        <span>✕</span>
+                    </div>
+                </div>
+                <div class="trailer-player__menubar">
+                    <span>File</span>
+                    <span>View</span>
+                    <span>Play</span>
+                    <span>Tools</span>
+                    <span>Help</span>
+                </div>
+                <div class="trailer-player__screen">
+                    <iframe 
+                        src="https://www.youtube.com/embed/IuSwvdIsM_E?si=pGoY_NF29l-Es5nQ" 
+                        title="Trailer But I'm a Cheerleader" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="trailer-player__controls">
+                    <span class="trailer-player__controls__status">Ready</span>
+                    <div class="trailer-player__controls__buttons">
+                        <button>⏮</button>
+                        <button>▶</button>
+                        <button>⏭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trailer-section__sinopse">
+            <h2 class="title">Sinopse</h2>
             <p class="text--big">
-                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+                Megan Bloomfield é uma cheerleader e aluna aplicada, com um namorado do time de futebol americano e uma vida aparentemente perfeita segundo os padrões da sua família conservadora. Só que os pais e amigos dela notam sinais que ela mesma ainda não conseguiu admitir: fotos de mulheres coladas no armário, falta de interesse em beijar o namorado, e um jeito peculiar de "torcer" pelas colegas de time. Convencidos de que ela é lésbica, eles a internam à força em True Directions, um acampamento de "conversão" que promete "curar" a homossexualidade através de terapias bregas e uma pedagogia extremamente cor-de-rosa. Lá dentro, Megan conhece Graham, uma garota rebelde que não esconde quem é, e aos poucos começa a entender — e aceitar — sua própria identidade, ao mesmo tempo em que desafia o sistema que tenta apagá-la.
             </p>
         </div>
     </section>
-    <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
-            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
-        </picture>
-        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
-            <h2 class="title">Baixe filmes e séries</h2>
-            <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
-            </p>
-        </div>
-    </section>
-     <section class="available-devices">
-        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
-        <ul class="available-devices__list">
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
-                <h4 class="title--small">Computador</h4>
-                <ul class="text">
-                    <li>Chrome OS</li>
-                    <li>MacOS</li>
-                    <li>PC Windows</li>
-                </ul>
+
+    <section class="cast">
+        <h2 class="title">Elenco</h2>
+        <ul class="cast__list">
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Natasha_Lyonne" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/natasha-lyonne.jpg" alt="Natasha Lyonne">
+                    <p class="text">Natasha Lyonne</p>
+                </a>
             </li>
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/tv.png" alt="Computador">
-                <h4 class="title--small">TV</h4>
-                <ul class="text">
-                    <li>Amazon Fire TV</li>
-                    <li>Android TV</li>
-                    <li>Apple TV</li>
-                    <li>Chromecast</li>
-                    <li>TVs LG</li>
-                    <li>Roku</li>
-                    <li>Samsung</li>
-                </ul>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Clea_DuVall" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/clea-duvall.jpg" alt="Clea DuVall">
+                    <p class="text">Clea DuVall</p>
+                </a>
             </li>
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/videogames.png" alt="Computador">
-                <h4 class="title--small">Videogames</h4>
-                <ul class="text">
-                    <li>PS4</li>
-                    <li>PS5</li>
-                    <li>Xbox One</li>
-                    <li>Xbox Serix X</li>
-                    <li>Xbox Serix S</li>
-                </ul>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/RuPaul" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/rupaul.jpg" alt="RuPaul">
+                    <p class="text">RuPaul</p>
+                </a>
             </li>
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/celular.png" alt="Computador">
-                <h4 class="title--small">Celulares e tablets</h4>
-                <ul class="text">
-                    <li>Tablets Amazon Fire</li>
-                    <li>Celulares e Tablets Android</li>
-                    <li>iPhone e iPad</li>
-                </ul>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Cathy_Moriarty" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/cathy-moriarty.jpg" alt="Cathy Moriarty">
+                    <p class="text">Cathy Moriarty</p>
+                </a>
+            </li>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Michelle_Williams_(atriz)" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/michelle-williams.jpg" alt="Michelle Williams">
+                    <p class="text">Michelle Williams</p>
+                </a>
+            </li>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Melanie_Lynskey" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/melanie-lynskey.jpg" alt="Melanie Lynskey">
+                    <p class="text">Melanie Lynskey</p>
+                </a>
+            </li>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Eddie_Cibrian" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/eddie-cibrian.jpg" alt="Eddie Cibrian">
+                    <p class="text">Eddie Cibrian</p>
+                </a>
+            </li>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Bud_Cort" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/bud-cort.jpg" alt="Bud Cort">
+                    <p class="text">Bud Cort</p>
+                </a>
+            </li>
+            <li class="cast__list__item">
+                <a href="https://pt.wikipedia.org/wiki/Mink_Stole" target="_blank" rel="noopener noreferrer">
+                    <img src="./dist/images/elenco/mink-stole.jpg" alt="Mink Stole">
+                    <p class="text">Mink Stole</p>
+                </a>
             </li>
         </ul>
-    </section> <section class="faq">
+    </section>
+
+    <section class="faq">
         <h2 class="title">Perguntas frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    Is Natasha Lyonne gay?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Unfortunately no.
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    Is Clea Duvall gay?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Hell yes! And married to a woman since 2015.
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    Is this the same RuPaul from Drag Race?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Yes!
                 </div>
             </li>
         </ul>
     </section>
-      <footer class="footer">
+
+    <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
-            <ul class="footer__links">
-                <li class="footer__links__item">
-                    <div class="language-selector">
-                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
-                        <select>
-                            <option>English</option>
-                            <option selected>Português</option>
-                        </select>
-                    </div>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Termos e Condições de Uso</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="" class="text--small">Política de privacidade</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Anúncios personalizados</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="" class="text--small">
-                        Dispositivos compatíveis
-                    </a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Ajuda</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="" class="text--small">Sobre o Disney+</a>
-                </li>
-            </ul>
+            <img class="footer__logo" src="./dist/images/logos/mepixel.jfif" alt="Demon_Daddyyyy">
             <p class="text--small">
-                ® 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
-            </p>
-            <p class="text--small">
-                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                Site desenvolvido por Bianca Semedo (<a href="https://github.com/DemonDaddyyyy" target="_blank" rel="noopener noreferrer" class="text--small">Demon_Daddyyyy</a>) — todos os direitos reservados.
             </p>
         </div>
     </footer>
 
-        <script src="./dist/js/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

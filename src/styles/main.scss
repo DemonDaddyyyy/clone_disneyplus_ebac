@@ -1,21 +1,21 @@
 @use 'variaveis';
 @use 'hero';
-@use 'shows';
-@use 'plans';
-@use 'available-devices'; 
 @use 'faq';
 @use 'footer';
 @use 'header';
+@use 'trailer-player';
+@use 'trailer-section';
+@use 'cast';
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-family: VarsityTeam;
+    src: url(../../assets/fonts/VarsityTeam-Bold.otf);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-family: VarsityTeam;
+    src: url(../../assets/fonts/VarsityTeam-Bold.otf);
     font-weight: 700;
 }
 
@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Avenir, sans-serif;
+    font-family: VarsityTeam, sans-serif;
     list-style: none;
 }
 
@@ -110,24 +110,26 @@ body {
     text-decoration: none;
     padding: 8px 14px;
     letter-spacing: 1px;
-    border: 1px solid  variaveis.$corDeFundoBotaoPrimario;
+    border: 2px solid #fff;
 
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+        border-color: variaveis.$corDeFundoBotaoPrimario;
     }
 
     &--secondary {
         background-color: variaveis.$corDeFundoBotaoSecundario;
         border-color: variaveis.$corDeFundoBotaoSecundario;
+        border: 2px solid #fff;
 
         &:hover {
-            background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
+         background-color: variaveis.$corTextoSecundario;
+            color: variaveis.$corDeFundo;
+            border-color: variaveis.$corDeFundoBotaoPrimario;
         }
     }
 
     &--dark {
-        background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
-        border-color: variaveis.$corTextoSecundario;
 
         &:hover {
             background-color: variaveis.$corTextoSecundario;
@@ -183,4 +185,9 @@ body {
             }
         }
     }
+}
+
+::selection {
+  background-color: variaveis.$corTextoSecundario;
+  color: variaveis.$corDeFundo;
 }
